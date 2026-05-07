@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zalma Studio Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#inicio">
+            <img class="brand-logo" src="{{ url_for('static', filename='img/logo-zalma.png') }}" alt="Logo da Zalma Studio Fitness">
+            <span>Zalma Studio Fitness</span>
+        </a>
+        <nav class="nav-menu" aria-label="Menu principal">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#modalidades">Modalidades</a>
+            <a href="#horarios">Horários</a>
+            <a href="#localizacao">Localização</a>
+            <a href="#matricula">Matrícula</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <div class="hero-copy">
+                    <p class="eyebrow">Studio Fitness em Itabira/MG</p>
+                    <h1>Treine com energia. Evolua com a Zalma.</h1>
+                    <p class="intro">
+                        Um studio moderno, acessível e familiar para quem busca saúde,
+                        força e bem-estar em todas as fases da vida.
+                    </p>
+                    <a class="button button-primary" href="https://wa.me/553197417630" target="_blank" rel="noopener">
+                        Matricule-se já
+                    </a>
+                </div>
+                <figure class="hero-photo-frame">
+                    <img class="hero-photo" src="{{ url_for('static', filename='img/studio-hero.jpg') }}" alt="Interior da Zalma Studio Fitness">
+                </figure>
+            </div>
+        </section>
+
+        <section class="section" id="sobre">
+            <div class="section-content split">
+                <div>
+                    <p class="eyebrow">Sobre</p>
+                    <h2>Uma academia para treinar com acolhimento e constância.</h2>
+                </div>
+                <p>
+                    A Zalma Studio Fitness é uma academia acessível, familiar e
+                    focada em saúde, força e bem-estar. Aqui, pessoas iniciantes,
+                    famílias e alunos de diferentes objetivos encontram um ambiente
+                    limpo, energético e preparado para evoluir com segurança.
+                </p>
+            </div>
+        </section>
+
+        <section class="section section-dark" id="modalidades">
+            <div class="section-content">
+                <p class="eyebrow">Modalidades</p>
+                <h2>Escolha o treino que combina com você.</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Musculação</h3>
+                        <p>Treinos para desenvolver força, resistência e condicionamento.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Cross Training</h3>
+                        <p>Aulas dinâmicas para intensidade, performance e energia.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Ritbox</h3>
+                        <p>Movimento, ritmo e treino em uma experiência animada.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Treinamento Funcional</h3>
+                        <p>Exercícios para melhorar mobilidade, equilíbrio e preparo físico.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Funcional Kids</h3>
+                        <p>Atividades para crianças com foco em movimento, diversão e saúde.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="horarios">
+            <div class="section-content">
+                <div class="info-card schedule-card">
+                    <div class="schedule-copy">
+                        <p class="eyebrow">Horários</p>
+                        <h2>Horários de funcionamento</h2>
+                    </div>
+                    <div class="schedule-list" aria-label="Horários de funcionamento">
+                        <div class="schedule-row">
+                            <span>Segunda a sexta</span>
+                            <strong>06h às 11h | 14h às 21h</strong>
+                        </div>
+                        <div class="schedule-row">
+                            <span>Sábado</span>
+                            <strong>08h às 11h</strong>
+                        </div>
+                    </div>
+                    <a class="button button-secondary" href="https://wa.me/553197417630" target="_blank" rel="noopener">
+                        Falar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-location" id="localizacao">
+            <div class="section-content">
+                <div class="info-card location-card">
+                    <div>
+                        <p class="eyebrow">Localização</p>
+                        <h2>Venha conhecer a Zalma Studio Fitness.</h2>
+                        <address>
+                            Rua Vereador Ozório Martins de Souza, 168<br>
+                            Vila São Joaquim (Arfita) — Itabira/MG
+                        </address>
+                    </div>
+                    <a class="button button-secondary" href="https://www.google.com/maps/search/?api=1&query=Rua%20Vereador%20Oz%C3%B3rio%20Martins%20de%20Souza%2C%20168%20-%20Vila%20S%C3%A3o%20Joaquim%20-%20Itabira%20MG" target="_blank" rel="noopener">
+                        Ver no Google Maps
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="matricula">
+            <div class="section-content compact">
+                <p class="eyebrow">Contato</p>
+                <h2>Comece sua matrícula hoje.</h2>
+                <p>
+                    Fale com a equipe pelo WhatsApp ou acompanhe as novidades no Instagram.
+                </p>
+                <div class="contact-actions">
+                    <a class="button button-primary" href="https://wa.me/553197417630" target="_blank" rel="noopener">
+                        Chamar no WhatsApp
+                    </a>
+                    <a class="button instagram-button" href="https://www.instagram.com/zalma_studio_fitness/" target="_blank" rel="noopener">
+                        @zalma_studio_fitness
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Zalma Studio Fitness. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
